@@ -3,7 +3,7 @@
 %endif
 
 Name:     msi-ec
-Version:  0.12.0.0.{{{ git_dir_version }}}
+Version:  0.12.{{{ git_dir_version }}}
 Release:  1%{?dist}
 Summary:  Embedded Controller for MSI laptops
 License:  GPLv2
