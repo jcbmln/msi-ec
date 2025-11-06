@@ -3,7 +3,7 @@
 %endif
 
 Name:     msi-ec
-Version:  0.12.{{{ git_dir_version }}}
+Version:  0.12.0.0.{{{ git_dir_version }}}
 Release:  1%{?dist}
 Summary:  Embedded Controller for MSI laptops
 License:  GPLv2
@@ -23,8 +23,7 @@ Embedded Controller for MSI laptops
 %setup -q -c %{name}-main
 
 %files
-%doc openrgb-dkms-main/README.md
-%license openrgb-dkms-main/LICENSE
+%doc %{name}-main/README.md
+%license %{name}-main/LICENSE
 
 %changelog
-{{{ git_dir_changelog }}}
