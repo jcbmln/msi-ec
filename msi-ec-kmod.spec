@@ -4,9 +4,9 @@
 %endif
 
 Name:       msi-ec-kmod
-Version:    0.12
+Version:    0.12.{{{ git_dir_version }}}
 Release:    1%{?dist}
-Summary:    msi-ec driver
+Summary:    Embedded Controller for MSI laptops
 License:    GPLv2
 URL:        https://github.com/jcbmln/msi-ec
 
@@ -18,7 +18,7 @@ BuildRequires: kmodtool
 %{expand:%(kmodtool --target %{_target_cpu} --kmodname %{name} %{?buildforkernels:--%{buildforkernels}} %{?kernels:--for-kernels "%{?kernels}"} 2>/dev/null) }
 
 %description
-msi-ec driver kernel module
+Embedded Controller for MSI laptops
 
 %prep
 # error out if there was something wrong with kmodtool
